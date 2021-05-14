@@ -1,0 +1,50 @@
+{
+    "name": "instantia/local",
+    "description": "Local description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/instantia/local",
+    "keywords": ["Laravel", "Library"],
+    "require": {
+        "instantia/library": ">=1.0",
+        "instantia/policy": ">=1.0"
+    },
+    "require-dev": {
+        "php": ">=7.0",
+        "phpunit/phpunit": "~7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Local\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Local\\Tests\\": "packages/instantia/local/tests"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://instantia-data@bitbucket.org/instantia-data/library.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://instantia-data@bitbucket.org/instantia-data/policy.git"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Local\\LocalServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
