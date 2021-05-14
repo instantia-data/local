@@ -1,6 +1,5 @@
 <?php
 
-use Webpatser\Countries\CountriesFacade as Countries;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 
@@ -25,7 +24,7 @@ class PopulateCountries extends Migration
     public function up()
     {
         //Get all of the countries
-        $countries = Countries::getList();
+        $countries = Local\Countries\CountrySource::getJson();
         foreach ($countries as $countryId => $country){
             
             DB::table($this->schema_table)->updateOrInsert([
