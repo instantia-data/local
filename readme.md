@@ -1,5 +1,5 @@
 # Local
-User management, login, register, password functions
+Deal with languages and countries
 ## Setup
 ### composer
 /composer.json

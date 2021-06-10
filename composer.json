@@ -4,16 +4,15 @@
     "license": "license",
     "authors": [
         {
-            "name": "author name",
-            "email": "author email",
-            "homepage": "author homepage"
+            "name": "Luís Pinto",
+            "email": "luis.pinto@instantia.pt",
+            "homepage": "https://github.com/instantia-data"
         }
     ],
     "homepage": "https://github.com/instantia/local",
-    "keywords": ["Laravel", "Library"],
+    "keywords": ["Laravel", "Localization"],
     "require": {
-        "instantia/library": ">=1.0",
-        "instantia/policy": ">=1.0"
+        "laravel/framework": ">=7.0"
     },
     "require-dev": {
         "php": ">=7.0",
@@ -30,14 +29,6 @@
         }
     },
     "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://instantia-data@bitbucket.org/instantia-data/library.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://instantia-data@bitbucket.org/instantia-data/policy.git"
-        }
     ],
     "extra": {
         "laravel": {
